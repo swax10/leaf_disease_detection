@@ -10,8 +10,10 @@ WORKDIR /app
 # Copy the rest of the code
 COPY . .
 
+RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
 # Install any needed dependencies specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Expose the port your Flask app runs on
 EXPOSE 5000
