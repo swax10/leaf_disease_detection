@@ -19,7 +19,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Define the command to run your Flask app when the container starts
-CMD ["python3", "app.py", "runserver"]
+CMD ["python", "app.py", "runserver"]
 
 # Backup CMD command to run the app on port 8080
-#CMD ["python3", "app.py", "runserver", "-h", "0.0.0.0", "-p", "8080"]
+#CMD ["python", "app.py", "runserver", "-h", "0.0.0.0", "-p", "8080"]
