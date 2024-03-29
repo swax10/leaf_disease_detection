@@ -11,10 +11,6 @@ apt install figlet
 
 figlet -l "Leaf Disease Detection"
 
-echo "Cloning Repository..."
-git clone https://github.com/swax10/leaf_disease_detection.git
-
-
 echo "Building Docker Image..."
 
 docker build -t leaf-disease-detection /root/leaf_disease_detection
